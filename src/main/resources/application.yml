@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://111.229.123.137:3306/student_wish?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 'Cxj20070729@#'
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.wishsystem.entity
+  configuration:
+    map-underscore-to-camel-case: true
+ollama:
+  url: http://127.0.0.1:11434/api/generate
+  model: llama3.2:latest
